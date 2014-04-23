@@ -12,22 +12,22 @@ public class MainApp {
 		/** Tworzenie obiekt?w */
 
 		Person p1 = new Person("Jan", "Kowal",
-				new Address("Poland", "Warsaw", "Koszykowa", "22-11"),
+				new Address("Warsaw", "Koszykowa", "22-11"),
 				MyCalendar.getBirthDate(11, 9, 1970));
 		p1.addNumber("22:9011213");
 		p1.addNumber("33:56096");
 
 		Person p2 = new Person("Jack", "Smith",
-				new Address("USA", "New York", "Wall street", "424141"),
+				new Address("New York", "Wall street", "424141"),
 				MyCalendar.getBirthDate(5, 12, 1985));
 		p2.addNumber("11:848281");
 
 		Student s1 = new Student("Adam", "Nowak",
-				new Address("Poland", "Krakow", "Cicha", "31-119"),
+				new Address("Krakow", "Cicha", "31-119"),
 				MyCalendar.getBirthDate(5, 8, 1990),
 				"s1011");
 		s1.setSecondName("Pawel");
-
+        
 		/** Zapisanie ekstensji do pliku */
 		save();
 
